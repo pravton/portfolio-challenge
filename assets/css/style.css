@@ -28,10 +28,13 @@
 
 h1,h2,h3,h4,h5,h6,a {
     font-family: var(--primary-font);
+    color: var(--quaternary-color);
+    text-decoration: none;
 }
 
 p {
     font-family: var(--secondary-font);
+    color: var(--quaternary-color);
 }
 /* Global Site End */
 
@@ -124,7 +127,12 @@ body {
 .section-container {
     width: 100%;
     display: flex;
-    margin-top: 60px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.section-container:last-child {
+    margin-bottom: 60px;
 }
 
 .section-title {
@@ -144,19 +152,13 @@ body {
     display: flex;
     flex: 2 80%;
     padding-left: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: var(--quaternary-color);
     border-left: var(--border-style);
     font-size: var(--medium-size);
 }
-
-/* Work Section Start */
-.work-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
+/* Work Section Style Start */
 .work {
     border: var(--border-style);
     height: 200px;
@@ -206,4 +208,38 @@ body {
     font-size: var(--small-size);
 }
 
-/* Work Section End */
+/* Work Section Style End */
+
+/* Contact Section Style Start */
+.contact-container {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    border-bottom: var(--border-style);
+    justify-content: space-evenly;
+}
+
+.contact-container a {
+    padding-bottom: 15px;
+}
+/* Contact Section Style End */
+
+/* Resume Section Style Start */
+.resume-container {
+    display: flex;
+    align-items: center;
+}
+
+.resume-container a {
+    color: var(--primary-color);
+}
+
+/* Footer Style Start */
+.footer-container {
+    height: 10vh;
+    padding: 0 5vw;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
