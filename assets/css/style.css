@@ -33,6 +33,11 @@ p {
 }
 /* Global Site End */
 
+/* Body Style Start */
+body {
+    background-color: var(--tertiary-color);
+}
+
 /* Header Style Start */
 .header-container {
     display: flex;
@@ -44,7 +49,7 @@ p {
 .logo-name {
     background-color: var(--primary-color);
     margin: 20px 0;
-    padding: 10px 40px;
+    padding: 10px 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,8 +57,7 @@ p {
 }
 
 .nav-container {
-    margin-right: 30px;
-    padding: 0 30px;
+    margin-right: 5vw;
     display: flex;
     align-items: center;
 }
@@ -76,4 +80,33 @@ p {
     font-size: var(--medium-size);
     text-decoration: none;
     color: var(--quaternary-color);
+}
+/* Header Style End */
+
+/* Hero Style Start */
+.hero {
+    background-color: #cccccc;
+    background-image: url("../images/background.jpg");
+    background-color: #1f2833;
+    height: 40vh;
+    opacity: 1;
+    background: linear-gradient(135deg, #2F3C4C55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #2F3C4C 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #2F3C4C55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #2F3C4C 25%, #1f2833 25%) 0px 0/ 80px 80px;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.hero-tagline {
+    padding:20px 30px;
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    display: flex;
+    margin-bottom: 3vw;
+    margin-right: 5vw;
+    align-items: center;
+}
+
+.hero-tagline h2 {
+    font-size: var(--medium-size);
 }
