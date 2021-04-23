@@ -1,5 +1,77 @@
-/* Stylesheet for Portfolio-challenge */
+/* Stylesheet for Portfolio-challenge v1*/
+
+/* Variables Start */
+:root {
+    /* Colors */
+    --primary-color:  #cf5656;
+    --secondary-color:  #2F3C4C;
+    --tertiary-color:  #1f2833;
+    --quaternary-color: white;
+    --shadow-color:  #1c2127;
+    /* Fonts */
+    --primary-font:  "Montserrat", sans-serif;
+    --secondary-font:  "Asap", sans-serif;
+    /* Sizes */
+    --big-size:  40px;
+    --medium-size:  25px;
+    --small-size:  15px;
+}
+/* Variables End */
+
+/* Global Style Start */
 * {
     padding: 0;
     margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,a {
+    font-family: var(--primary-font);
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+/* Global Site End */
+
+/* Header Style Start */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+}
+
+.logo-name {
+    background-color: var(--primary-color);
+    margin: 20px 0;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--quaternary-color);
+}
+
+.nav-container {
+    margin-right: 30px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container ul li {
+    margin: 20px 10px;
+    list-style-type: none;
+    border-bottom: 3px solid var(--primary-color);
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.nav-container ul li a {
+    font-size: var(--medium-size);
+    text-decoration: none;
+    color: var(--quaternary-color);
 }
