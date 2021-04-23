@@ -15,6 +15,8 @@
     --big-size:  40px;
     --medium-size:  25px;
     --small-size:  15px;
+    /* border style */
+    --border-style: 4px solid var(--primary-color)
 }
 /* Variables End */
 
@@ -71,7 +73,7 @@ body {
 .nav-container ul li {
     margin: 20px 10px;
     list-style-type: none;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: var(--border-style);
     text-align: center;
     padding: 5px 10px;
 }
@@ -103,10 +105,105 @@ body {
     color: var(--quaternary-color);
     display: flex;
     margin-bottom: 3vw;
-    margin-right: 5vw;
+    margin-right: 10vw;
     align-items: center;
 }
 
 .hero-tagline h2 {
     font-size: var(--medium-size);
 }
+/* Hero Style End */
+
+/* Content Style Start */
+.content-container {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.section-container {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 20%;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    min-width: 200px;
+    padding-right: 40px;
+    text-align: right;
+    color: var(--quaternary-color);
+    font-size: var(--big-size);
+}
+
+.section-content {
+    display: flex;
+    flex: 2 80%;
+    padding-left: 40px;
+    color: var(--quaternary-color);
+    border-left: var(--border-style);
+    font-size: var(--medium-size);
+}
+
+/* Work Section Start */
+.work-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work {
+    border: var(--border-style);
+    height: 200px;
+    margin-bottom: 20px;
+    background-image: url(../images/background.jpg);
+    display: flex;
+    width: calc((100% / 2) - 18px);
+    align-items: flex-end;
+}
+
+.work:first-child {
+    /* background image */
+    width: 100%;
+    height: 400px;
+}
+
+.work:nth-child(2) {
+    /* background image */
+}
+
+.work:nth-child(3) {
+    /* background image */
+
+}
+
+.work:nth-child(4) {
+    /* background image */
+    margin: 0px;
+}
+
+.work:nth-child(5) {
+    /* background image */
+    margin: 0px;
+}
+
+.work-info {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.work-info h3 {
+    font-size: 20px;
+}
+
+.work-info p {
+    font-size: var(--small-size);
+}
+
+/* Work Section End */
