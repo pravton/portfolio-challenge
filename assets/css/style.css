@@ -9,11 +9,11 @@
     /* --quaternary-color: white; */
     --shadow-color:  #1c2127;
     /* Fonts */
-    --primary-font:  "Montserrat", sans-serif;
-    --secondary-font:  "Asap", sans-serif;
+    --primary-font: 'Rubik', sans-serif;
+    --secondary-font:  'Poppins', sans-serif;
     /* Sizes */
-    --big-size:  35px;
-    --medium-size:  24px;
+    --big-size:  40px;
+    --medium-size:  23px;
     --small-size:  15px;
     /* border style */
 }
@@ -64,13 +64,13 @@ body {
 /* Toggle Switch Start */
 .toggle-input {
     position: absolute;
-    top: 28px;
+    top: 35px;
     left: 92%;
 }
 
 .toggle-label {
     position: absolute;
-    top: 28px;
+    top: 35px;
     left: 92%;
 }
 
@@ -79,21 +79,34 @@ body {
 }
 
 .toggle-input:checked + .toggle-label::before {
-    content: "☀";
-    color: #74babb;
-    font-size: 40px;
+    display: inline-block;
+    content: " ";
+    background-image: url(../images/sun.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #74babb;
     animation-name: rotate;
-    transform: rotate(20deg);
+    transform: rotate(90deg);
     transition: all 2s;
 }
 
 .toggle-input + .toggle-label::before {
-    content: "☾";
     display: inline-block;
+    content: " ";
+    background-image: url(../images/moon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #cf5656;
     animation-name: rotate;
-    color: #cf5656;
-    font-size: 40px;
-    transform: rotate(-50deg);
+    transform: rotate(0deg);
     transition: all 2s;
     
 }
@@ -327,19 +340,19 @@ main {
 @media only screen and (max-width: 880px) {
     /* Togle Swtich */
     .toggle-input {
-        top : 5px;
+        top : 10px;
     }
 
     .toggle-label {
-        top: 5px;
+        top: 10px;
     }
 
     .toggle-input:checked + .toggle-label::before {
-        color: #31343D;      
+        background-color: #EDEDF6;   
     }
 
     .toggle-input + .toggle-label::before {
-        color: white;
+        background-color: #1f2833;   
     } 
     /* Header Style */
     .header-container {
