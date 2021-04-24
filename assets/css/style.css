@@ -3,10 +3,10 @@
 /* Variables Start */
 :root {
     /* Colors */
-    --primary-color:  #cf5656;
-    --secondary-color:  #2F3C4C;
-    --tertiary-color:  #1f2833;
-    --quaternary-color: white;
+    /* --primary-color:  #cf5656; */
+    /* --secondary-color:  #2F3C4C; */
+    /* --tertiary-color:  #1f2833; */
+    /* --quaternary-color: white; */
     --shadow-color:  #1c2127;
     /* Fonts */
     --primary-font:  "Montserrat", sans-serif;
@@ -16,7 +16,6 @@
     --medium-size:  24px;
     --small-size:  15px;
     /* border style */
-    --border-style: 4px solid var(--primary-color)
 }
 /* Variables End */
 
@@ -42,13 +41,74 @@ p {
 body {
     background-color: var(--tertiary-color);
 }
+/* Body Style End */
+
+.body-container {
+    --primary-color:  #cf5656;
+    --secondary-color: #1f2833;
+    --tertiary-color:  #1f2833;
+    --quaternary-color: white;
+    --border-style: 4px solid var(--primary-color);
+    
+    background-color: var(--tertiary-color);
+  }
+  
+.toggle-input:checked ~ .body-container {
+    --primary-color:  #74babb;
+    --secondary-color: #31343D;
+    --tertiary-color:  #EDEDF6;
+    --quaternary-color: #31343D;
+}
+/* Toogle Switch End */
+
+/* Toggle Switch Start */
+.toggle-input {
+    position: absolute;
+    top: 28px;
+    left: 92%;
+}
+
+.toggle-label {
+    position: absolute;
+    top: 28px;
+    left: 92%;
+}
+
+.toggle-input {
+    opacity: 0;
+}
+
+.toggle-input:checked + .toggle-label::before {
+    content: "☀";
+    color: #74babb;
+    font-size: 40px;
+    animation-name: rotate;
+    transform: rotate(20deg);
+    transition: all 2s;
+}
+
+.toggle-input + .toggle-label::before {
+    content: "☾";
+    display: inline-block;
+    animation-name: rotate;
+    color: #cf5656;
+    font-size: 40px;
+    transform: rotate(-50deg);
+    transition: all 2s;
+    
+}
+
+.toggle-label:hover {
+    cursor: pointer;
+}
+  
 
 /* Header Style Start */
 .header-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
 }
 
 .logo-name {
@@ -62,7 +122,7 @@ body {
 }
 
 .nav-container {
-    margin-right: 5vw;
+    margin-right: 9.5vw;
     display: flex;
     align-items: center;
 }
@@ -84,18 +144,16 @@ body {
 .nav-container ul li a {
     font-size: var(--medium-size);
     text-decoration: none;
-    color: var(--quaternary-color);
+    color: var(--primary-color);
 }
 /* Header Style End */
 
 /* Hero Style Start */
 .hero {
-    background-color: #cccccc;
     background-image: url("../images/background.jpg");
-    background-color: #1f2833;
     height: 40vh;
     opacity: 1;
-    background: linear-gradient(135deg, #2F3C4C55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #2F3C4C 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #2F3C4C55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #2F3C4C 25%, #1f2833 25%) 0px 0/ 80px 80px;
+    background: linear-gradient(135deg, #2F3C4C55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #2F3C4C 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #2F3C4C55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #2F3C4C 25%, var(--tertiary-color) 25%) 0px 0/ 80px 80px;
     background-repeat: repeat;
     display: flex;
     flex-direction: row-reverse;
@@ -250,17 +308,39 @@ main {
 /* Footer Style Start */
 .footer-container {
     height: 10vh;
-    padding: 0 5vw;
-    background-color: var(--secondary-color);
+    padding: 0 9vw;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+}
+
+.copyright {
+    margin-left: 20px;
 }
 /* Footer Style End */
 
 
-/* Responsive CSS width under 840px */
-@media only screen and (max-width: 840px) {
+/* Responsive CSS width under 880px */
+@media only screen and (max-width: 880px) {
+    /* Togle Swtich */
+    .toggle-input {
+        top : 5px;
+    }
+
+    .toggle-label {
+        top: 5px;
+    }
+
+    .toggle-input:checked + .toggle-label::before {
+        color: #31343D;      
+    }
+
+    .toggle-input + .toggle-label::before {
+        color: white;
+    } 
     /* Header Style */
     .header-container {
         justify-content: center;
@@ -317,11 +397,22 @@ main {
     }
 
     .footer-container {
-        justify-content: space-around;
+        align-content: center;
+    }
+
 }
 
 /* Responsive Style width below 540px */
 @media only screen and (max-width: 540px) {
+    /* Toggle Style */
+    .toggle-input {
+        left : 88%;
+    }
+
+    .toggle-label {
+        left : 88%;
+    }
+
     .nav-container ul li {
         margin: 10px;
         padding: 0;
