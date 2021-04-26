@@ -25,4 +25,4 @@ HTML & CSS
 >### NOTE
 >The application have two themes Dark and Light. The theme can be switched by clicking the icon on the header.
 
-![Final Output Of The Website!](./assets/images/final-product.png "Final Output Of The Website")
+![Final Output Of The Website!](./assets/images/final-product.gif "Final Output Of The Website")
