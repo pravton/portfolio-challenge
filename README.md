@@ -16,7 +16,7 @@ HTML & CSS
 - When resizing the page or view the site on various screens and devices the end user presenterd with a responsive layout that adapts the viewport. 
 
 ## Mockup
-![Mockup Image!] (./assets/images/mockup.gif "Mockup")
+![Mockup Image!](./assets/images/mockup.gif "Mockup")
 
 ## Final Product Link
 [**Click Here**](https://pravton.github.io/portfolio-challenge/) to view the project in Github Pages.
@@ -25,4 +25,4 @@ HTML & CSS
 >### NOTE
 >The application have two themes Dark and Light. The theme can be switched by clicking the icon on the header.
 
-![Final Output Of The Website](./assets/images/final-product.png "Final Output Of The Website")
+![Final Output Of The Website!](./assets/images/final-product.png "Final Output Of The Website")
