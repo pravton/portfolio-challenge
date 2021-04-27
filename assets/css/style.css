@@ -25,15 +25,20 @@
     margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,a {
+h1,h2,h3,h4,h5,h6 {
     font-family: var(--primary-font);
-    color: var(--quaternary-color);
-    text-decoration: none;
+    color: var(--font-color-secondary);
 }
 
 p {
     font-family: var(--secondary-font);
-    color: var(--quaternary-color);
+    color: var(--font-color);
+}
+
+a {
+    font-family: var(--primary-font);
+    color: var(--font-color);
+    text-decoration: none;
 }
 /* Global Site End */
 
@@ -46,9 +51,12 @@ body {
 /* Background Style and Toggle Switch Style Start */
 .body-container {
     --primary-color:  #cf5656;
-    --secondary-color: #1f2833;
-    --tertiary-color:  #1f2833;
+    --secondary-color: #31343d;
+    --tertiary-color:  #31343d;
     --quaternary-color: white;
+    --font-color: white;
+    --font-color-secondary: white;
+    --border-color: var(--primary-color);
     --border-style: 4px solid var(--primary-color);
     
     background-color: var(--tertiary-color);
@@ -73,9 +81,12 @@ body {
 
 .toggle-input:checked ~ .body-container {
     --primary-color:  #74babb;
-    --secondary-color: #31343D;
+    --secondary-color: #31343d;
     --tertiary-color:  #EDEDF6;
-    --quaternary-color: #31343D;
+    --quaternary-color: #445877;
+    --font-color: #222;
+    --font-color-secondary: #31343d;
+    --border-color: var(--quaternary-color);
 }
 
 .toggle-input:checked + .toggle-label::before {
@@ -134,7 +145,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--quaternary-color);
 }
 
 .nav-container {
@@ -169,7 +179,9 @@ body {
     background-image: url("../images/background.jpg");
     height: 40vh;
     opacity: 1;
-    background: linear-gradient(135deg, #2F3C4C55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #2F3C4C 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #2F3C4C55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #2F3C4C 25%, var(--tertiary-color) 25%) 0px 0/ 80px 80px;
+    /* Patterns was created on https://www.magicpattern.design/tools/css-backgrounds */
+    background-color: var(--quaternary-color);
+    background: linear-gradient(135deg, #44587755 25%, transparent 25%) -80px 0/ 160px 160px, linear-gradient(225deg, #445877 25%, transparent 25%) -80px 0/ 160px 160px, linear-gradient(315deg, #44587755 25%, transparent 25%) 0px 0/ 160px 160px, linear-gradient(45deg, #445877 25%, var(--tertiary-color) 25%) 0px 0/ 160px 160px;
     background-repeat: repeat;
     display: flex;
     flex-direction: row-reverse;
@@ -179,7 +191,6 @@ body {
 .hero-tagline {
     padding:20px 30px;
     background-color: var(--primary-color);
-    color: var(--quaternary-color);
     display: flex;
     margin-bottom: 3vw;
     margin-right: 10vw;
@@ -218,8 +229,11 @@ main {
     min-width: 200px;
     padding-right: 40px;
     text-align: right;
-    color: var(--quaternary-color);
     font-size: var(--big-size);
+}
+
+.section-title h2 {
+    color: var(--quaternary-color);
 }
 
 .section-content {
@@ -229,7 +243,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     color: var(--quaternary-color);
-    border-left: var(--border-style);
+    border-left: 4px solid var(--border-color);
     font-size: var(--medium-size);
 }
 /* Work Section Style Start */
@@ -315,7 +329,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     align-self: center;
-    border-bottom: var(--border-style);
+    border-bottom: 4px solid var(--border-color);
     justify-content: space-between;
 }
 
