@@ -50,16 +50,14 @@ body {
 
 /* Background Style and Toggle Switch Style Start */
 .body-container {
-    --primary-color:  #cf5656;
+    --primary-color:  #74babb;
     --secondary-color: #31343d;
-    --tertiary-color:  #31343d;
-    --quaternary-color: white;
-    --font-color: white;
-    --font-color-secondary: white;
-    --border-color: var(--primary-color);
+    --tertiary-color:  #EDEDF6;
+    --quaternary-color: #445877;
+    --font-color: #222;
+    --font-color-secondary: #31343d;
+    --border-color: var(--quaternary-color);
     --border-style: 4px solid var(--primary-color);
-    
-    background-color: var(--tertiary-color);
   }
 
 /* Toggle Switch Start */
@@ -80,16 +78,34 @@ body {
 }
 
 .toggle-input:checked ~ .body-container {
-    --primary-color:  #74babb;
+    --primary-color:  #cf5656;
     --secondary-color: #31343d;
-    --tertiary-color:  #EDEDF6;
-    --quaternary-color: #445877;
-    --font-color: #222;
-    --font-color-secondary: #31343d;
-    --border-color: var(--quaternary-color);
+    --tertiary-color:  #31343d;
+    --quaternary-color: white;
+    --font-color: white;
+    --font-color-secondary: white;
+    --border-color: var(--primary-color);
+    
+    background-color: var(--tertiary-color);
 }
 
 .toggle-input:checked + .toggle-label::before {
+    display: inline-block;
+    content: " ";
+    background-image: url(../images/moon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 3px black;
+    width: 35px;
+    height: 35px;
+    background-color: #cf5656; 
+    transform: rotate(0deg);
+    transition: all 2s;
+}
+
+.toggle-input + .toggle-label::before {
     display: inline-block;
     content: " ";
     background-image: url(../images/sun.png);
@@ -101,26 +117,9 @@ body {
     width: 35px;
     height: 35px;
     background-color: #74babb;
-    animation-name: rotate;
     transform: rotate(90deg);
     transition: all 2s;
-}
-
-.toggle-input + .toggle-label::before {
-    display: inline-block;
-    content: " ";
-    background-image: url(../images/moon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 50%;
-    box-shadow: 0 0 3px black;
-    width: 35px;
-    height: 35px;
-    background-color: #cf5656;
-    animation-name: rotate;
-    transform: rotate(0deg);
-    transition: all 2s;
+    
     
 }
 
@@ -246,6 +245,14 @@ main {
     border-left: 4px solid var(--border-color);
     font-size: var(--medium-size);
 }
+/* Content Style Start */
+
+/* About Section Start */
+.about-description span {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-size: var(--medium-size);
+}
 /* Work Section Style Start */
 .works {
     display: flex;
@@ -296,7 +303,7 @@ main {
 
 }
 
-.work:nth-child(5) {
+.work:nth-child(4) {
     /* background image */
     margin: 0px;
 }
@@ -324,7 +331,7 @@ main {
 
 /* Contact Section Style Start */
 .contact-container {
-    margin: 5px 5px;
+    margin: 10px 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -360,6 +367,10 @@ main {
     align-items: center;
 }
 
+.footer-name h3 {
+    font-size: var(--medium-size);
+}
+
 .copyright {
     margin-left: 20px;
 }
@@ -368,6 +379,9 @@ main {
 
 /* Responsive CSS width under 880px */
 @media only screen and (max-width: 880px) {
+    h2 {
+        font-size: var(--big-size);
+    }
     /* Togle Swtich */
     .toggle-input {
         top : 10px;
@@ -378,11 +392,11 @@ main {
     }
 
     .toggle-input:checked + .toggle-label::before {
-        background-color: #EDEDF6;   
+        background-color: #1f2833;   
     }
 
     .toggle-input + .toggle-label::before {
-        background-color: #1f2833;   
+        background-color: #EDEDF6;   
     } 
 
     /* Header Style */
