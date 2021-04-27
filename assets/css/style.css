@@ -205,6 +205,8 @@ body {
 .about-img img {
     width: 15vw;
     min-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
 }
 
 .hero-tagline-container{
@@ -223,7 +225,6 @@ body {
     font-size: var(--medium-size);
     align-items: center;
 }
-
 /* Hero Style End */
 
 /* Content Style Start */
@@ -413,6 +414,7 @@ main {
 @media only screen and (max-width: 880px) {
     h2 {
         font-size: var(--big-size);
+        text-align: center;
     }
     /* Togle Swtich */
     .toggle-input {
@@ -499,11 +501,11 @@ main {
 @media only screen and (max-width: 540px) {
     /* Toggle Style */
     .toggle-input {
-        left : 88%;
+        left : 85%;
     }
 
     .toggle-label {
-        left : 88%;
+        left : 85%;
     }
 
     .nav-container ul li {
@@ -513,6 +515,10 @@ main {
 
     .nav-container ul li a {
         font-size: 4vw;
+    }
+
+    .hero {
+        height: 60%;
     }
 
     /* Hero Style */
@@ -538,6 +544,11 @@ main {
 
     .work:first-child {
         height: 200px;
+    }
+
+    /* Contact Section Style */
+    .contact-container a {
+        padding-bottom: 5px;
     }
 
     /* Footer Style */
