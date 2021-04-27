@@ -326,6 +326,7 @@ main {
 
 .work-container:not(:hover){
     box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.212);
+    transition: all 0.3s;
   }
 
 .work:first-child {
