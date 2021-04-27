@@ -171,6 +171,11 @@ body {
     text-decoration: none;
     color: var(--primary-color);
 }
+
+.nav-container ul li:hover {
+    border-bottom: 4px solid white;
+    transition: all 1s;
+}
 /* Header Style End */
 
 /* Hero Style Start */
@@ -376,6 +381,11 @@ main {
 .contact-container a {
     padding-bottom: 15px;
 }
+
+.contact-container a:hover {
+    color: var(--primary-color);
+    transition: all 1s;
+}
 /* Contact Section Style End */
 
 /* Resume Section Style Start */
@@ -544,6 +554,11 @@ main {
 
     .work:first-child {
         height: 200px;
+    }
+
+    .work:nth-child(4) {
+        /* background image */
+        margin-bottom: 20px;
     }
 
     /* Contact Section Style */
