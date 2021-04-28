@@ -183,7 +183,7 @@ body {
     background-image: url("../images/background.jpg");
     height: 50vh;
     opacity: 1;
-    /* Patterns was created on https://www.magicpattern.design/tools/css-backgrounds */
+    /* Patterns was created from https://www.magicpattern.design/tools/css-backgrounds */
     background-color: var(--quaternary-color);
     background: linear-gradient(135deg, #44587755 25%, transparent 25%) -80px 0/ 160px 160px, linear-gradient(225deg, #445877 25%, transparent 25%) -80px 0/ 160px 160px, linear-gradient(315deg, #44587755 25%, transparent 25%) 0px 0/ 160px 160px, linear-gradient(45deg, #445877 25%, var(--tertiary-color) 25%) 0px 0/ 160px 160px;
     background-repeat: repeat;
@@ -276,7 +276,7 @@ main {
     border-left: 4px solid var(--border-color);
     font-size: var(--medium-size);
 }
-/* Content Style Start */
+/* Content Style End */
 
 /* About Section Start */
 .about-section {
@@ -290,6 +290,7 @@ main {
     color: var(--primary-color);
     font-size: var(--medium-size);
 }
+/* About Section End */
 
 /* Work Section Style Start */
 .works {
@@ -297,13 +298,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-}
-
-
-.work:first-child {
-    /* background image */
-    width: 100%;
-    height: 400px;
 }
 
 .work {
@@ -327,7 +321,12 @@ main {
 .work-container:not(:hover){
     box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.212);
     transition: all 0.3s;
-  }
+}
+
+.work:first-child {
+    width: 100%;
+    height: 400px;
+}
 
 .work:first-child {
     background-image: url(../images/run-buddy.JPG);
@@ -423,6 +422,7 @@ main {
 
 /* Responsive CSS width under 880px */
 @media only screen and (max-width: 880px) {
+    /* Heading Style */
     h2 {
         font-size: var(--big-size);
         text-align: center;
@@ -528,11 +528,11 @@ main {
         font-size: 4vw;
     }
 
+    /* Hero Style */
     .hero {
         height: 60%;
     }
 
-    /* Hero Style */
     .hero-tagline {
         text-align: center;
         padding: 15px;
