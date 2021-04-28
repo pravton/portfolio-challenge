@@ -2,7 +2,7 @@
 This is a portfolio challenge assignment.
 
 ## User Story
-Employer wants to view the deployed portfolio of work samples So that the employer can review and ass whther the candidate is good for an open position. 
+Employer wants to view the deployed portfolio of work samples So that the employer can review and assess whether the candidate is good for an open position. 
 
 ## Languages
 HTML & CSS
@@ -15,14 +15,14 @@ HTML & CSS
 - When clicking the image of the application the end user taken to that deployed application. 
 - When resizing the page or view the site on various screens and devices the end user presenterd with a responsive layout that adapts the viewport. 
 
-## Mockup
-![Mockup Image!](./assets/images/mockup.gif "Mockup")
-
 ## Final Product Link
 [**Click Here**](https://pravton.github.io/portfolio-challenge/) to view the project in Github Pages.
 
+## Mockup
+![Mockup Image!](./assets/images/mockup.gif "Mockup")
+
 ## Final Output
 >### NOTE
->The application have two themes Dark and Light. The theme can be switched by clicking the icon on the header.
+>The application have two themes Light and Dark. The theme can be switched by clicking the icon on the header.
 
 ![Final Output Of The Website!](./assets/images/final-product.gif "Final Output Of The Website")
