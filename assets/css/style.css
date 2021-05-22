@@ -329,25 +329,37 @@ main {
 }
 
 .work:first-child {
-    background-image: url(../images/run-buddy.JPG);
+    background-image: url(../images/get-it-done.JPG);
 }
 
 .work:nth-child(2) {
-    background-image: url(../images/horiseon.JPG);
+    background-image: url(../images/taskinator.JPG);
 }
 
 .work:nth-child(3) {
     /* background image */
-
+    background-image: url(../images/password-generator.JPG);
 }
 
 .work:nth-child(4) {
     /* background image */
-    margin: 0px;
+    background-image: url(../images/code-quiz.JPG);
 }
 
 .work:nth-child(5) {
     /* background image */
+    background-image: url(../images/taskmaster-pro.JPG);
+}
+
+.work:nth-child(6) {
+    /* background image */
+    background-image: url(../images/work-day-scheduler.JPG);
+    margin: 0px;
+}
+
+.work:nth-child(7) {
+    /* background image */
+    background-image: url(../images/run-buddy.JPG);
     margin: 0px;
 }
 
