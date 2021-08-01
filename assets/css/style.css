@@ -335,33 +335,41 @@ main {
 }
 
 .work:first-child {
-    background-image: url(../images/covidDashboard.JPG);
+    background-image: url(../images/coworkers.png);
 }
 
-.work:nth-child(2){
-    background-image: url(../images/get-it-done.JPG);
+.work:nth-child(2) {
+    background-image: url(../images/weather-dashboard.jpg);
 }
 
 .work:nth-child(3) {
-    background-image: url(../images/taskinator.JPG);
+    background-image: url(../images/covidDashboard.JPG);
 }
 
-.work:nth-child(4) {
-    /* background image */
-    background-image: url(../images/password-generator.JPG);
+.work:nth-child(4){
+    background-image: url(../images/get-it-done.JPG);
 }
 
 .work:nth-child(5) {
-    /* background image */
-    background-image: url(../images/code-quiz.JPG);
+    background-image: url(../images/taskinator.JPG);
 }
 
 .work:nth-child(6) {
     /* background image */
-    background-image: url(../images/taskmaster-pro.JPG);
+    background-image: url(../images/password-generator.JPG);
 }
 
 .work:nth-child(7) {
+    /* background image */
+    background-image: url(../images/code-quiz.JPG);
+}
+
+.work:nth-child(8) {
+    /* background image */
+    background-image: url(../images/taskmaster-pro.JPG);
+}
+
+.work:nth-child(9) {
     /* background image */
     background-image: url(../images/work-day-scheduler.JPG);
     margin: 0px;
